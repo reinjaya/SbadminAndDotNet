@@ -86,9 +86,14 @@ namespace WebApp.Controllers
         [HttpPost]
         public IActionResult ChangePassword(string password, string passwordConfirm)
         {
-            var IdUser = TempData["IdUser"];
-            var data = myContext.Users.Find(IdUser);
+            int IdUser = Convert.ToInt32(TempData["IdUser"]);
 
+            if (IdUser == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            var data = myContext.Users.Find(IdUser);
             if (data != null && (password == passwordConfirm))
             {
                 data.Password = password;
