@@ -37,7 +37,7 @@ namespace WebApp.Controllers
             };
 
             if (data != null) {
-                return RedirectToAction("Index", "Home", new {FullName = "Test"});
+                return RedirectToAction("Index", "Home");
             }
 
             return View();

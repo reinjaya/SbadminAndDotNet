@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WebApp.Models;
+using WebApp.ViewModel;
 
 namespace WebApp.Controllers
 {
@@ -15,7 +16,9 @@ namespace WebApp.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            ResponseLogin responseLogin = new ResponseLogin();
+
+            return View(responseLogin);
         }
 
         public IActionResult Privacy()
