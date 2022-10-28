@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
 using WebApp.Context;
 using WebApp.Models;
 using WebApp.ViewModel;
@@ -9,7 +10,6 @@ namespace WebApp.Controllers
     public class AccountController : Controller
     {
         MyContext myContext;
-        ResponseLogin responseLogin = new ResponseLogin();
         public AccountController(MyContext myContext)
         {
             this.myContext = myContext;
@@ -36,10 +36,11 @@ namespace WebApp.Controllers
                 Role = data.Role.Name
             };
 
+            var id = myContext.Employees.SingleOrDefault(x => x.Email.Equals(email)).Id;
+            TempData["IdUser"] = id;
             if (data != null) {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Home", new {Id = id});
             }
-
             return View();
         }
 
@@ -85,10 +86,8 @@ namespace WebApp.Controllers
         [HttpPost]
         public IActionResult ChangePassword(string password, string passwordConfirm)
         {
-            ResponseLogin responseLogin = new ResponseLogin();
-
-            var id = myContext.Employees.SingleOrDefault(x => x.Email.Equals(responseLogin.Email)).Id;
-            var data = myContext.Users.Find(id);
+            var IdUser = TempData["IdUser"];
+            var data = myContext.Users.Find(IdUser);
 
             if (data != null && (password == passwordConfirm))
             {
