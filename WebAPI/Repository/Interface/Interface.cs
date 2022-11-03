@@ -7,7 +7,5 @@
         public int Create(Entity entity);
         public int Update(Entity entity);
         public int Delete(Key id);
-        public Entity GetDataLogin(string email, string password);
-
     }
 }

@@ -41,9 +41,9 @@ namespace WebAPI.Repository.Data
             return _context.Departements.Find(id);
         }
 
-        public int Update(Departement division)
+        public int Update(Departement departement)
         {
-            _context.Entry(division).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            _context.Entry(departement).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             var result = _context.SaveChanges();
             return result;
         }

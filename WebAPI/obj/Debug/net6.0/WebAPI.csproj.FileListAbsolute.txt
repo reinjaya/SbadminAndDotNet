@@ -277,3 +277,6 @@ E:\Reinhard\Documents\Belajar Pemrograman C#\WebApp\WebAPI\obj\Debug\net6.0\refi
 E:\Reinhard\Documents\Belajar Pemrograman C#\WebApp\WebAPI\obj\Debug\net6.0\WebAPI.pdb
 E:\Reinhard\Documents\Belajar Pemrograman C#\WebApp\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 E:\Reinhard\Documents\Belajar Pemrograman C#\WebApp\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
+E:\Reinhard\Documents\Belajar Pemrograman C#\WebApp\WebAPI\bin\Debug\net6.0\WebAPI.staticwebassets.runtime.json
+E:\Reinhard\Documents\Belajar Pemrograman C#\WebApp\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+E:\Reinhard\Documents\Belajar Pemrograman C#\WebApp\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
