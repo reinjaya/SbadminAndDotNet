@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using WebApp.Context;
 using Microsoft.AspNetCore.Identity;
-using WebApp.Data;
+
 
 namespace WebApp
 {
@@ -10,6 +10,15 @@ namespace WebApp
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddDistributedMemoryCache();
+
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromSeconds(10);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
@@ -33,10 +42,10 @@ namespace WebApp
             app.UseStaticFiles();
 
             app.UseRouting();
-                        app.UseAuthentication();;
+            app.UseAuthentication();;
 
             app.UseAuthorization();
-
+            app.UseSession();
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "mNGQ2+sMWOjJvmcipP+FBPLRfCWh/hBjG7h6Q+VumohiXBtw9vlPf9HfHHrgsri86oJ54aYiDvNvZyF+7rOGjA==",
+  "dgSpecHash": "7tvccfj/NyGIQLseuOOAbYU14kHv6RB75u4IX6o7dXpcyryb1j4TGy8id6ucL7e5OqNOVZMMameF8hia2bsStw==",
   "success": true,
   "projectFilePath": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\WebApp\\WebApp\\WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Reinhard\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Reinhard\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Reinhard\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\Reinhard\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Reinhard\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\Reinhard\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
