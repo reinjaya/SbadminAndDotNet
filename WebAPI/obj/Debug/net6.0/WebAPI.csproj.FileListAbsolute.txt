@@ -280,3 +280,4 @@ E:\Reinhard\Documents\Belajar Pemrograman C#\WebApp\WebAPI\obj\Debug\net6.0\ref\
 E:\Reinhard\Documents\Belajar Pemrograman C#\WebApp\WebAPI\bin\Debug\net6.0\WebAPI.staticwebassets.runtime.json
 E:\Reinhard\Documents\Belajar Pemrograman C#\WebApp\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
 E:\Reinhard\Documents\Belajar Pemrograman C#\WebApp\WebAPI\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\Reinhard\Documents\Belajar Pemrograman C#\WebApp\WebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

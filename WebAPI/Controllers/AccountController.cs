@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using WebAPI.Handlers;
@@ -7,6 +8,7 @@ using WebAPI.Repository.Data;
 
 namespace WebAPI.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AccountController : ControllerBase
@@ -17,6 +19,7 @@ namespace WebAPI.Controllers
             _repository = repository;
         }
 
+        [AllowAnonymous]
         [HttpGet("Login")]
         public ActionResult Login(string email, string password)
         {

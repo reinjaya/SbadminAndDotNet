@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JEdl56ukl84zyQ6X27VgFwVITom2dc0lm0DLfGxifklzLXsm4k8r45FlhbA5L+YBe38Gw4ulVfjaoe9LoivKkw==",
+  "dgSpecHash": "hVdS9g01RxJWXhJzlf2LlvjNaYP/tmHwt9Djh3W4VfXT35hqz4DjFESNexP1kgXa4qvH02HGL8uh76EK9KKJOA==",
   "success": true,
   "projectFilePath": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\WebApp\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\Reinhard\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\Reinhard\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\Reinhard\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
+    "C:\\Users\\Reinhard\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.10\\microsoft.aspnetcore.authentication.jwtbearer.6.0.10.nupkg.sha512",
     "C:\\Users\\Reinhard\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.10\\microsoft.aspnetcore.cryptography.internal.6.0.10.nupkg.sha512",
     "C:\\Users\\Reinhard\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.10\\microsoft.aspnetcore.cryptography.keyderivation.6.0.10.nupkg.sha512",
     "C:\\Users\\Reinhard\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.10\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.10.nupkg.sha512",
