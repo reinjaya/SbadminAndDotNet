@@ -103,7 +103,7 @@ namespace WebApp.Controllers
         {
             int IdUser = Convert.ToInt32(HttpContext.Session.GetString("Id"));
 
-            if (IdUser == null)
+            if (IdUser > 0)
             {
                 return RedirectToAction("Login", "Account");
             }

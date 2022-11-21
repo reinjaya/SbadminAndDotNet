@@ -16,24 +16,13 @@ namespace WebApp.Controllers
         //GET ALL
         public IActionResult Index()
         {
-            var role = HttpContext.Session.GetString("Role");
-            if (role ==  "Admin")
-            {
-                var data = myContext.Divisions.ToList();
-                return View(data);
-            }
-            else if (role == null)
-            {
-                return RedirectToAction("UnAuthorized", "ErrorPages");
-            }
-            return RedirectToAction("Forbidden", "ErrorPages");
+            return View();
         }
 
         //GET BY ID
-        public IActionResult Details(int id)
+        public IActionResult Details()
         {
-            var data = myContext.Divisions.Find(id);
-            return View(data);
+            return View();
         }
 
         //INSERT - GET
@@ -47,22 +36,13 @@ namespace WebApp.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Division division)
         {
-            division.CreatedBy = HttpContext.Session.GetString("FullName");
-            division.CreatedDate = DateTime.Now.ToLocalTime();
-            myContext.Divisions.Add(division);
-            var result = myContext.SaveChanges();
-            if (result > 0)
-            {
-                return RedirectToAction("Index", "Division");
-            }
-            return View(result);
+            return View();
         }
 
         //UPDATE - GET
         public IActionResult Edit(int id)
         {
-            var data = myContext.Divisions.Find(id);
-            return View(data);
+            return View();
         }
 
         //UPDATE - POST
@@ -70,23 +50,13 @@ namespace WebApp.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, Division division)
         {
-            var data = myContext.Divisions.Find(id);
-            if (data != null)
-            {
-                data.Name = division.Name;
-                myContext.Entry(data).State = EntityState.Modified;
-                var result = myContext.SaveChanges();
-                if (result > 0)
-                    return RedirectToAction("Index", "Division");
-            }
             return View();
         }
 
         //DELETE - GET
         public IActionResult Delete(int id)
         {
-            var data = myContext.Divisions.Find(id);
-            return View(data);
+            return View();
         }
 
         //DELEE - POST
@@ -94,10 +64,6 @@ namespace WebApp.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Delete(Division division)
         {
-            myContext.Divisions.Remove(division);
-            var result = myContext.SaveChanges();
-            if (result > 0)
-                return RedirectToAction("Index", "Division");
             return View();
         }
     }

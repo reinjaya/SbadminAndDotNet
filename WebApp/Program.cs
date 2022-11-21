@@ -28,6 +28,17 @@ namespace WebApp
 
             });
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(policy =>
+                {
+                    policy.AllowAnyOrigin();
+                    policy.AllowAnyHeader();
+                    policy.AllowAnyMethod();
+                });
+            });
+
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -42,6 +53,7 @@ namespace WebApp
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseCors();
             app.UseAuthentication();;
 
             app.UseAuthorization();

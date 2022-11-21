@@ -8,37 +8,22 @@ namespace WebApp.Controllers
 {
     public class DepartementController : Controller
     {
-        MyContext myContext;
-        public DepartementController(MyContext myContext)
-        {
-            this.myContext = myContext;
-        }
-
         //GET ALL
         public IActionResult Index()
         {
-            var data = myContext.Departements.ToList();
-            return View(data);
+            return View();
         }
 
         //GET BY ID
         public IActionResult Details(int id)
         {
-            var data = myContext.Departements.Find(id);
-            return View(data);
+            return View();
         }
 
         //CREATE - GET
         public IActionResult Create()
         {
-            var data = new MyViewModel();
-            data.Divisions = myContext.Divisions.Select(a => new SelectListItem()
-            {
-                Value = a.Id.ToString(),
-                Text = a.Name
-            }).ToList();
-
-            return View(data);
+            return View();
         }
 
         //CREATE - POST
@@ -46,20 +31,13 @@ namespace WebApp.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Departement departement)
         {
-            myContext.Departements.Add(departement);
-            var result = myContext.SaveChanges();
-            if (result > 0)
-            {
-                return RedirectToAction("Index", "Departement");
-            }
-            return View(result);
+            return View();
         }
 
         //EDIT - GET
         public IActionResult Edit(int id)
         {
-            var data = myContext.Departements.Find(id);
-            return View(data);
+            return View();
         }
 
         //EDIT - POST
@@ -67,24 +45,13 @@ namespace WebApp.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, Departement departement)
         {
-            var data = myContext.Departements.Find(id);
-            if (data != null)
-            {
-                data.Name = departement.Name;
-                data.DivisionId = departement.DivisionId;
-                myContext.Entry(data).State = EntityState.Modified;
-                var result = myContext.SaveChanges();
-                if (result > 0)
-                    return RedirectToAction("Index", "Departement");
-            }
             return View();
         }
 
         //DELETE - GET
         public IActionResult Delete(int id)
         {
-            var data = myContext.Departements.Find(id);
-            return View(data);
+            return View();
         }
 
         //DELETE - POST
@@ -92,10 +59,6 @@ namespace WebApp.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Delete(Departement departement)
         {
-            myContext.Departements.Remove(departement);
-            var result = myContext.SaveChanges();
-            if (result > 0)
-                return RedirectToAction("Index", "Departement");
             return View();
         }
     }

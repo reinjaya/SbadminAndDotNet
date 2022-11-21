@@ -21,7 +21,7 @@ namespace WebAPI.Repository.Data
                     .Include(x => x.Role)
                     .SingleOrDefault(x => x.Employee.Email.Equals(email));
 
-            bool pass = true; //Hashing.ValidatePassword(password, data.Password);
+            bool pass = Hashing.ValidatePassword(password, data.Password);
 
             if (pass)
             {
