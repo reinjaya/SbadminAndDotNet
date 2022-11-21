@@ -116,10 +116,7 @@ function saveEditDiv() {
             'Content-Type': 'application/json'
         },
         success: function () {
-            Swal.fire(
-                'Successfully save data',
-                'success'
-            )
+            Swal.fire('Successfully saved data', '', 'success');
             location.reload();
         }
     });
@@ -127,6 +124,17 @@ function saveEditDiv() {
 
 function getIdDiv(id) {
     delIdDiv = id;
+    Swal.fire({
+        title: 'Do you want to delete this data?',
+        showDenyButton: false,
+        showCancelButton: true,
+        confirmButtonText: 'Delete',
+    }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            deleteData();
+        }
+    })
 }
 
 function deleteDataDiv() {
@@ -134,10 +142,7 @@ function deleteDataDiv() {
         url: `https://localhost:7042/api/Divisions/?id=${delIdDiv}`,
         type: 'DELETE',
         success: function (data) {
-            Swal.fire(
-                'Successfully delete data',
-                'success'
-            )
+            Swal.fire('Successfully deleted data', '', 'success');
             location.reload();
         }
     });
@@ -162,10 +167,7 @@ function addDataDiv() {
             'Content-Type': 'application/json'
         },
         success: function () {
-            Swal.fire(
-                'Successfully added data',
-                'success'
-            )
+            Swal.fire('Successfully added data', '', 'success');
             location.reload();
         }
     });

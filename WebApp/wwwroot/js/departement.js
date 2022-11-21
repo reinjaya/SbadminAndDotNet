@@ -25,7 +25,7 @@ $(document).ready(function () {
                     return `<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="viewData(${data.id})">
                               Detail & Edit
                             </button>
-                            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" onclick="getId(${data.id})">
+                            <button type="button" class="btn btn-danger" onclick="getId(${data.id})">
                               Delete
                             </button>`;
                 }
@@ -123,10 +123,7 @@ function saveEdit() {
             'Content-Type': 'application/json'
         },
         success: function (data) {
-            Swal.fire(
-                'Successfully save data',
-                'success'
-            );
+            Swal.fire('Successfully saved data', '', 'success');
             location.reload();
         }
     });
@@ -134,6 +131,17 @@ function saveEdit() {
 
 function getId(id) {
     delIdDept = id;
+    Swal.fire({
+        title: 'Do you want to delete this data?',
+        showDenyButton: false,
+        showCancelButton: true,
+        confirmButtonText: 'Delete',
+    }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            deleteData();
+        }
+    })
 }
 
 function deleteData() {
@@ -141,10 +149,7 @@ function deleteData() {
         url: `https://localhost:7042/api/Departements/?id=${delIdDept}`,
         type: 'DELETE',
         success: function (data) {
-            Swal.fire(
-                'Successfully delete data',
-                'success'
-            );
+            Swal.fire('Deleted!', '', 'success');
             location.reload();
         }
     });
@@ -173,11 +178,8 @@ function addData() {
         headers: {
             'Content-Type': 'application/json'
         },
-        success: function (datas) {
-            Swal.fire(
-                'Successfully added data',
-                'success'
-            );
+        success: function () {
+            Swal.fire('Successfully added data', '', 'success');
             location.reload();
         }
     });

@@ -8,101 +8,101 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebApp
 build_property.RootNamespace = WebApp
-build_property.ProjectDir = E:\Reinhard\Downloads\WebApp\WebApp\
+build_property.ProjectDir = E:\Reinhard\Documents\Belajar Pemrograman C#\Front-End\WebApp\WebApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\Reinhard\Downloads\WebApp\WebApp
+build_property.MSBuildProjectDirectory = E:\Reinhard\Documents\Belajar Pemrograman C#\Front-End\WebApp\WebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Account/ChangePassword.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Account/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Account/ForgotPassword.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Account/Login.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Account/NewPassword.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Account/NewPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxOZXdQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Account/Register.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Departement/Create.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Departement/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0ZW1lbnRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Departement/Delete.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Departement/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0ZW1lbnRcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Departement/Details.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Departement/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0ZW1lbnRcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Departement/Edit.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Departement/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0ZW1lbnRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Departement/Index.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Departement/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0ZW1lbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Division/Create.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Division/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGl2aXNpb25cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Division/Delete.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Division/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGl2aXNpb25cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Division/Details.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Division/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGl2aXNpb25cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Division/Edit.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Division/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGl2aXNpb25cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Division/Index.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Division/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGl2aXNpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/ErrorPages/Forbidden.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/ErrorPages/Forbidden.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JQYWdlc1xGb3JiaWRkZW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/ErrorPages/UnAuthorized.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/ErrorPages/UnAuthorized.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JQYWdlc1xVbkF1dGhvcml6ZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Home/Index.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Shared/Error.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/_ViewImports.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/_ViewStart.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Reinhard/Downloads/WebApp/WebApp/Views/Shared/_Layout.cshtml]
+[E:/Reinhard/Documents/Belajar Pemrograman C\#/Front-End/WebApp/WebApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-7882z672yd
