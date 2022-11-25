@@ -22,6 +22,23 @@ namespace WebAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("WebAPI.Models.WebAPI.Modes.ClientCompany", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ClientCompany");
+                });
+
             modelBuilder.Entity("WebAPI.Modes.Departement", b =>
                 {
                     b.Property<int>("Id")
@@ -72,6 +89,10 @@ namespace WebAPI.Migrations
                     b.Property<DateTime>("BirthDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -79,6 +100,13 @@ namespace WebAPI.Migrations
                     b.Property<string>("FullName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Gender")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Salary")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -107,6 +135,9 @@ namespace WebAPI.Migrations
                     b.Property<int>("Id")
                         .HasColumnType("int");
 
+                    b.Property<int>("ClientId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -115,6 +146,8 @@ namespace WebAPI.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ClientId");
 
                     b.HasIndex("RoleId");
 
@@ -134,6 +167,12 @@ namespace WebAPI.Migrations
 
             modelBuilder.Entity("WebAPI.Modes.User", b =>
                 {
+                    b.HasOne("WebAPI.Models.WebAPI.Modes.ClientCompany", "ClientCompany")
+                        .WithMany()
+                        .HasForeignKey("ClientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("WebAPI.Modes.Employee", "Employee")
                         .WithMany()
                         .HasForeignKey("Id")
@@ -145,6 +184,8 @@ namespace WebAPI.Migrations
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("ClientCompany");
 
                     b.Navigation("Employee");
 

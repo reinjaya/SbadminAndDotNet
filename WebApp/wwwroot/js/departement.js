@@ -5,6 +5,9 @@ $(document).ready(function () {
         ajax: {
             url: 'https://localhost:7042/api/Departements',
             dataSrc: 'data',
+            headers: {
+                'Authorization': "Bearer " + sessionStorage.getItem("token")
+            },
         },
         columns: [
             {
@@ -54,7 +57,10 @@ $(document).ready(function () {
 function viewData(id) {
     $.ajax({
         url: `https://localhost:7042/api/Departements/${id}`,
-        type: "GET"
+        type: "GET",
+        headers: {
+            'Authorization': $.cookie('token')
+        }
     }).done((res) => {
         let temp = "";
 
@@ -148,6 +154,9 @@ function deleteData() {
     $.ajax({
         url: `https://localhost:7042/api/Departements/?id=${delIdDept}`,
         type: 'DELETE',
+        headers: {
+            'Authorization': $.cookie('token')
+        },
         success: function (data) {
             Swal.fire('Deleted!', '', 'success');
             location.reload();

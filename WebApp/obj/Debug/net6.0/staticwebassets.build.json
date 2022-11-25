@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BH9YeWknqT423g6jU4a5WyIm706Bjdsg61VLA+Ct928=",
+  "Hash": "nEeCeAT45OqtpzlnHCrsiU9Dzkkw+7I1EnF3rL6KhP8=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -1156,6 +1156,40 @@
       "OriginalItemSpec": "wwwroot\\js\\division.js"
     },
     {
+      "Identity": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\Front-End\\WebApp\\WebApp\\wwwroot\\js\\employeeChart.js",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\Front-End\\WebApp\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "js/employeeChart.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\employeeChart.js"
+    },
+    {
+      "Identity": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\Front-End\\WebApp\\WebApp\\wwwroot\\js\\login.js",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\Front-End\\WebApp\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "js/login.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\login.js"
+    },
+    {
       "Identity": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\Front-End\\WebApp\\WebApp\\wwwroot\\js\\site.js",
       "SourceId": "WebApp",
       "SourceType": "Discovered",
@@ -2174,6 +2208,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\Sbadmin\\css\\sb-admin-2.min.css"
+    },
+    {
+      "Identity": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\Front-End\\WebApp\\WebApp\\wwwroot\\lib\\Sbadmin\\image\\login-image.jpg",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\Front-End\\WebApp\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "lib/Sbadmin/image/login-image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\Sbadmin\\image\\login-image.jpg"
     },
     {
       "Identity": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\Front-End\\WebApp\\WebApp\\wwwroot\\lib\\Sbadmin\\img\\undraw_posting_photo.svg",

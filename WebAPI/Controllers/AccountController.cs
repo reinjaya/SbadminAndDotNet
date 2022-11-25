@@ -10,12 +10,13 @@ using System.Text;
 using WebAPI.Handlers;
 using WebAPI.Modes;
 using WebAPI.Repository.Data;
+using WebAPI.ViewModel;
 
 namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize(Roles = "Admin")]
+    
     public class AccountController : ControllerBase
     {
         private readonly AccountRepository _repository;
@@ -26,20 +27,20 @@ namespace WebAPI.Controllers
             _configuration = configuration;
         }
 
-        //[AllowAnonymous]
-        [HttpGet("Login")]
-        public ActionResult Login(string email, string password)
+        [AllowAnonymous]
+        [HttpPost("Login")]
+        public ActionResult Login(LoginVM login)
         {
             try
             {
-                var data = _repository.GetDataLogin(email, password);
+                var data = _repository.GetDataLogin(login.Email, login.Password);
                 if (data == null)
                 {
                     return Ok(new
                     {
                         StatusCode = 200,
                         Message = "Gagal login, password atau email tidak valid"
-                    }); ;
+                    });
                 }
                 else
                 {
@@ -84,9 +85,9 @@ namespace WebAPI.Controllers
             }
         }
 
-        //[AllowAnonymous]
+        [AllowAnonymous]
         [HttpPost("Register")]
-        public ActionResult Register(string fullName, string email, string password, DateTime birthDate)
+        public ActionResult Register(string fullName, string email, string password, DateTime birthDate, string gender, int salary, string city)
         {
             try
             {
@@ -94,7 +95,7 @@ namespace WebAPI.Controllers
 
                 if (IsEmailAvailable)
                 {
-                    var resultEmployee = _repository.CreateEmployee(fullName, email, birthDate);
+                    var resultEmployee = _repository.CreateEmployee(fullName, email, birthDate, gender, salary, city);
                     if (resultEmployee > 0)
                     {
                         var resultUser = _repository.CreateUser(email, password);
@@ -133,6 +134,7 @@ namespace WebAPI.Controllers
             }
         }
 
+        [Authorize(Roles = "Staff")]
         [HttpPut("ChangePassword")]
         public ActionResult ChangePassword(string email, string oldPassword, string newPassword)
         {
@@ -178,6 +180,7 @@ namespace WebAPI.Controllers
             }
         }
 
+        [Authorize(Roles = "Staff")]
         [HttpPut("ResetPassword")]
         public ActionResult ResetPassword(string fullName, string email, string newPassword, DateTime birthDate)
         {

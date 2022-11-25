@@ -14,7 +14,7 @@ namespace WebAPI.Repository.Data
             _context = context;
         }
 
-        public UserEmployeeRoleModel GetDataLogin(string email, string password)
+        public UserEmployeeRole GetDataLogin(string email, string password)
         {
             var data = _context.Users
                     .Include(x => x.Employee)
@@ -25,7 +25,7 @@ namespace WebAPI.Repository.Data
 
             if (pass)
             {
-                UserEmployeeRoleModel result = new UserEmployeeRoleModel()
+                UserEmployeeRole result = new UserEmployeeRole()
                 {
                     Id = data.Id,
                     FullName = data.Employee.FullName,
@@ -49,13 +49,16 @@ namespace WebAPI.Repository.Data
             return true;
         }
 
-        public int CreateEmployee(string fullName, string email, DateTime birthDate)
+        public int CreateEmployee(string fullName, string email, DateTime birthDate, string gender, int salary, string city)
         {
             Employee employee = new Employee()
             {
                 FullName = fullName,
                 Email = email,
                 BirthDate = birthDate,
+                Gender = gender,
+                Salary = salary,
+                City = city
             };
 
             _context.Employees.Add(employee);
@@ -70,7 +73,8 @@ namespace WebAPI.Repository.Data
             {
                 Id = id,
                 Password = Hashing.HashPassword(password),
-                RoleId = 1
+                RoleId = 1,
+                ClientId = 1
             };
             _context.Users.Add(user);
             var result = _context.SaveChanges();

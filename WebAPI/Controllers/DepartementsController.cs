@@ -7,7 +7,7 @@ using WebAPI.Repository.Data;
 
 namespace WebAPI.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class DepartementsController : BaseController<DepartementRepository, Departement>

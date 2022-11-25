@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using WebAPI.Models.WebAPI.Modes;
 using WebAPI.Modes;
 
 namespace WebAPI.Context
@@ -15,6 +16,7 @@ namespace WebAPI.Context
         public DbSet<Role> Roles { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<ClientCompany> ClientCompany { get; set; }
 
     }
 }

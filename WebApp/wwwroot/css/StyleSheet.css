@@ -1,1 +1,9 @@
-﻿
+﻿#clientChart, #cityChart {
+    margin: 0 auto;
+    width: auto;
+    height: 100%;
+}
+
+#genderChart {
+    height: 500px;
+}
