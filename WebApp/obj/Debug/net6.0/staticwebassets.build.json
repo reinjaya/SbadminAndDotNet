@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nEeCeAT45OqtpzlnHCrsiU9Dzkkw+7I1EnF3rL6KhP8=",
+  "Hash": "P2xcYEntNk/1byFXeCQRUaCl96KPlZqdZ6W02EBx/0Q=",
   "Source": "WebApp",
   "BasePath": "_content/WebApp",
   "Mode": "Default",
@@ -1171,6 +1171,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\employeeChart.js"
+    },
+    {
+      "Identity": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\Front-End\\WebApp\\WebApp\\wwwroot\\js\\home.js",
+      "SourceId": "WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\Front-End\\WebApp\\WebApp\\wwwroot\\",
+      "BasePath": "_content/WebApp",
+      "RelativePath": "js/home.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\home.js"
     },
     {
       "Identity": "E:\\Reinhard\\Documents\\Belajar Pemrograman C#\\Front-End\\WebApp\\WebApp\\wwwroot\\js\\login.js",

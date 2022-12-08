@@ -1,6 +1,4 @@
 ﻿
-console.log("äaaxxaa")
-
 function login() {
     //var _email = $('#inputEmail').val();
     //var _password = $('#inputPassword').val();
@@ -18,7 +16,7 @@ function login() {
     /* https://localhost:7042/api/Account/Login/  https://localhost:7042/api/Account/Login/?email=${data.email}&password=${data.password} */
 
     $.ajax({
-        url: `https://localhost:7042/api/Account/Login/`,
+        url: `https://localhost:7042/api/Account/Login`,
         method: 'POST',
         data: JSON.stringify(data),
         dataType: 'json',
@@ -28,7 +26,7 @@ function login() {
         success: function (d) {
             //$.cookie('token', d.token)
             sessionStorage.setItem("token", d.token);
-            console.log($.cookie('token'))
+            //console.log($.cookie('token'))
             window.location.replace("../Departement/")
         }
     })

@@ -8,7 +8,7 @@ $(document).ready(function () {
             headers: {
                 'Authorization': "Bearer " + sessionStorage.getItem("token")
             },
-        },
+        }, 
         columns: [
             {
                 data: null,
@@ -59,7 +59,7 @@ function viewData(id) {
         url: `https://localhost:7042/api/Departements/${id}`,
         type: "GET",
         headers: {
-            'Authorization': $.cookie('token')
+            'Authorization': "Bearer " + sessionStorage.getItem("token")
         }
     }).done((res) => {
         let temp = "";
